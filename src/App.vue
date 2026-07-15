@@ -112,28 +112,9 @@ onUnmounted(() => {
         </div>
       </section>
 
-      <!-- FORMULARIO DE CÓDIGO SECRETO (Sigue igual) -->
-      <section class="secret-section">
-        <p class="secret-label">Ingresa tu Código Secreto Amigo:</p>
-        <div class="form-group">
-          <input 
-            v-model="codigoIngresado" 
-            type="text" 
-            placeholder="Ej. JULIO25"
-            @keyup.enter="validarCodigo"
-            class="input-code"
-          />
-          <button @click="validarCodigo" class="btn-reveal">
-            REVELAR UBICACIÓN
-          </button>
-        </div>
-        <p v-if="errorCodigo" class="error">¡Ups! Código incorrecto. ❌</p>
-      </section>
-
-      <!-- MAPA OCULTO (v-if) (Sigue igual) -->
-      <section v-if="mostrarUbicacion" class="map-section">
+      <section class="map-section">
         <div class="map-card">
-          <h3>📍 Ubicación Revelada</h3>
+          <h3>📍 Ubicación</h3>
           <p>Billar Plaza Kristal, Aguascalientes</p>
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511.52260345462!2d-102.28077709681021!3d21.878238172580655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee0b51555555%3A0x171574150a034db4!2sCinemas%20Kristal!5e0!3m2!1ses-419!2smx!4v1784067234895!5m2!1ses-419!2smx" 
@@ -145,7 +126,6 @@ onUnmounted(() => {
           </iframe>
         </div>
       </section>
-
     </div>
   </div>
 </template>
