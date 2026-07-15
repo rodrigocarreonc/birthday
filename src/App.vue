@@ -70,7 +70,7 @@ onUnmounted(() => {
           <h1>¡Celebrar el Cumpleaños de<br>Rodrigo El Rorek!</h1>
           <p class="date">Sábado 25 de Julio de 2026.</p>
           <p class="date">7:00 PM</p>
-          <p>Prepárate para una ponerte hasta su puta madre y jugar billar</p>
+          <p>Prepárate para ponerte hasta su puta madre y jugar billar</p>
           <h2 class="highlight">¡NO FALTES!</h2>
         </div>
         
